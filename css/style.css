@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-
+/* font family poppins sans serif */
 .wrapper{
  max-width: 1200px; 
  margin: auto;
@@ -10,6 +10,7 @@
 header nav{
   display: flex;
   justify-content: space-between;  
+  align-items: center;
 }
 
 nav ul li{
@@ -63,7 +64,7 @@ section{
   margin: auto;
 }
 
-#intro a:link, a:visited{
+#intro .btn, a:link a:visited{
   text-decoration: none;
   color: white;
   background-color: black;
@@ -74,7 +75,6 @@ section{
 #innovation{
   background-color: #f8fafc;
   text-align: center;
-  padding: 20px;
 }
 
 #reviews{
@@ -87,7 +87,7 @@ section{
   text-align: center;
 }
 
-#flavours div{
+#flavours{
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: repeat(2, 1fr);
@@ -117,7 +117,11 @@ section{
   max-width: 100%;
 }
 
-#flavours h2{
+h2{
+  text-align: center;
+}
+
+#flavours p{
   text-align: center;
 }
 
