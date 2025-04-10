@@ -1,7 +1,16 @@
 * {
   box-sizing: border-box;
 }
-/* font family poppins sans serif */
+
+body{
+  font-family:"Poppins", serif;
+  font-weight: 400 ;
+}
+
+img{
+  border-radius: 5%;
+}
+
 .wrapper{
  max-width: 1200px; 
  margin: auto;
@@ -13,15 +22,22 @@ header nav{
   align-items: center;
 }
 
+ul{
+  display: flex;
+  gap: 20px;
+}
+
 nav ul li{
   list-style: none;
+  font-size: larger;
   flex-wrap: nowrap;
 }
+
 
 header a{
   text-decoration: none;
 }
-/* Make header links stay on one line */
+
 #lineup .wrapper{
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -57,6 +73,8 @@ h1{
   margin: auto;
   font-size: 2.027rem;
   padding-top: 35px;
+  padding-bottom: 20px;
+  font-weight: 500;
 }
 
 section{
@@ -74,17 +92,30 @@ section{
 
 #innovation{
   background-color: #f8fafc;
-  text-align: center;
+  text-align: left;
+  padding-bottom: 30px;
+  margin-top: 60px;
+  padding-top: 10px;
 }
 
 #reviews{
   background-color: #000;
   color: #fff;
-  padding: 15px;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 #reviews h2{
   text-align: center;
+}
+
+#reviews p{
+  padding-bottom: 20px;
+}
+
+
+#reviews .wrapper div p{
+  font-style: italic;
 }
 
 #flavours{
@@ -94,40 +125,151 @@ section{
   grid-template-areas: 
   "div1 div2"
   "div3 div4";
-  gap: 10px;
+  gap: 25px;
 }
 
 #flavours img:nth-child(1){
   grid-area: div1;
   max-width: 100%;
+  background-color: black;
 }
 
 #flavours img:nth-child(2){
   grid-area: div2;
   max-width: 100%;
+  background-color: black;
 }
 
 #flavours img:nth-child(3){
   grid-area: div3;
   max-width: 100%;
+  background-color: black;
 }
 
 #flavours img:nth-child(4){
   grid-area: div4;
   max-width: 100%;
+  background-color: black;
 }
 
 h2{
   text-align: center;
 }
 
-#flavours p{
+#flavours{
   text-align: center;
+  margin-top: 30px;
+}
+
+#intro .wrapper .bold{
+  font-weight: 700;
+}
+
+@media(min-width: 768px){
+
+#intro .wrapper div{
+padding: 0;
+}
+
+#lineup .wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "div1 div2"
+  "div3 div4";
+  gap: 15px;
+}
+
+#lineup img:nth-child(1){
+  grid-area: div1;
+  max-width: 100%;
+}
+
+#lineup img:nth-child(2){
+  grid-area: div2;
+  max-width: 100%;
+}
+
+#lineup img:nth-child(3){
+  grid-area: div3;
+  max-width: 100%;
+}
+
+#lineup img:nth-child(4){
+  grid-area: div4;
+  max-width: 100%;
+}
+
+#innovation .wrapper article, p{
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+
+#reviews .wrapper article{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: left;
+  padding: 20px;
+
+}
+
+#flavours{
+  display: flex;
+  grid-template-columns: repeat(1, auto); 
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: 
+  "div1 div2 div3 div4";
+  gap: 20px;
+}
+
+#flavours img:nth-child(1){
+  grid-area: div1;
+  max-width: 100%;
+  background-color: black;
+}
+
+#flavours img:nth-child(2){
+  grid-area: div2;
+  max-width: 100%;
+  background-color: black;
+}
+
+#flavours img:nth-child(3){
+  grid-area: div3;
+  max-width: 100%;
+  background-color: black;
+}
+
+#flavours img:nth-child(4){
+  grid-area: div4;
+  max-width: 100%;
+  background-color: black;
+}
+
+#flavours div p{
+justify-content: center;
+padding-top: 0;
+}
+}
+
+@media(min-width: 960px){
+
+
+#bravo{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
 }
 
 footer{
-  color: #222;
-  color: #fff;
-  color: #000;
-  color: #f8fafc;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0;
 }
